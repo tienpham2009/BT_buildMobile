@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp mô tả điện thoại</title>
+
+</head>
+<body>
+<script src="mobile.js"></script>
+<script>
+let nokia = new Mobile('nokia 5.1');
+let iphone = new Mobile('iphone 12 promax');
+nokia.turnOn();
+iphone.turnOn();
+nokia.newMessage('hello iphone');
+nokia.sendMessage(iphone);
+console.log(iphone.getInBox())
+console.log(iphone.getOutBox());
+nokia.chargeBattery();
+console.log(nokia.battery);
+
+
+
+</script>
+</body>
+</html>
